@@ -143,7 +143,6 @@ public class MainActivity extends Activity {
         best2.setText(num + "");
     }
 
-
     @Override
     protected void onStop() {
         // 如果不调用此方法，则按home键的时候会出现图标无法显示的情况。

@@ -18,6 +18,8 @@ import net.youmi.android.spot.SplashView;
 import net.youmi.android.spot.SpotDialogListener;
 import net.youmi.android.spot.SpotManager;
 
+import cn.jpush.android.api.JPushInterface;
+
 public class SplashSpotActivity extends Activity {
 
     SplashView splashView;
@@ -117,6 +119,13 @@ public class SplashSpotActivity extends Activity {
             setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         }
         super.onResume();
+        JPushInterface.onResume(this);
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        JPushInterface.onPause(this);
     }
 
     @Override
