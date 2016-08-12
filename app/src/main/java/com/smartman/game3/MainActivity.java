@@ -14,8 +14,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import net.youmi.android.banner.AdSize;
-import net.youmi.android.banner.AdView;
 import net.youmi.android.spot.SpotManager;
 
 public class MainActivity extends Activity {
@@ -75,11 +73,11 @@ public class MainActivity extends Activity {
 
         //有米广告
         //实例化广告条
-        AdView adView = new AdView(this, AdSize.FIT_SCREEN);
+        //AdView adView = new AdView(this, AdSize.FIT_SCREEN);
         //获取要嵌入广告条的布局
-        LinearLayout adLayout = (LinearLayout) findViewById(R.id.adLayout);
+        //LinearLayout adLayout = (LinearLayout) findViewById(R.id.adLayout);
         //将广告条加入到布局中
-         adLayout.addView(adView);
+         //adLayout.addView(adView);
 
 
         animLayer = (AnimLayer) findViewById(R.id.animLayer);
